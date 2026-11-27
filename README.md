@@ -150,7 +150,6 @@ HTTP | http://localhost:8080
 | Moving average | 3 | 32.77 |
 | One-Euro | 4 Hz | 50.93 |
 
-<br>
 ## 📈 결과
 
 | 지표 | 원본 | 수업 후처리 | 개선 후처리 |
