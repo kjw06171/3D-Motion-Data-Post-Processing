@@ -66,7 +66,6 @@ python scripts/p1_2_post_processing.py       # 후처리 + 그래프
 ```
 
 ---
- <br>
  
 ## 📊 실행하면 생기는 결과
 
