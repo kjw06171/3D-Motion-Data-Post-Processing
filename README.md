@@ -171,3 +171,34 @@ HTTP | http://localhost:8080
 | `module 'mediapipe' has no attribute 'solutions'` | `pip install mediapipe==0.10.14` |
 | 실행이 끝나지 않음 | viser 재생 화면이 켜져 있는 상태입니다. `Ctrl + C`로 종료 |
 | 그래프 제목의 한글이 □로 보임 | 한글 폰트(맑은 고딕 등)가 없는 환경입니다. 결과에는 영향 없음 |
+
+
+
+
+## 🤝 Contributing
+
+이 프로젝트는 모든 사람의 기여를 환영합니다! 아래는 프로젝트에 참여하는 방법입니다:
+
+1. **버그 보고**: 문제가 발생하거나 개선할 부분을 발견했다면, [이슈를 열어](https://github.com/kjw06171/kim-ji-won/issues) 버그를 보고해 주세요.
+2. **풀 리퀘스트 제출**: 새로운 기능을 추가하거나 기존 문제를 해결하고 싶다면, 레포지토리를 포크한 후 풀 리퀘스트를 제출해 주세요.
+3. **문서 개선**: 프로젝트의 문서를 개선하는 데 기여해 주세요. 작은 수정도 환영합니다!
+
+#### 기여 방법
+1. 레포지토리를 포크(Fork)합니다.
+2. 새 브랜치를 생성합니다. (`git checkout -b feature/your-feature`)
+3. 변경 사항을 커밋합니다. (`git commit -am 'Add some feature'`)
+4. 브랜치에 푸시(Push)합니다. (`git push origin feature/your-feature`)
+5. 풀 리퀘스트를 생성합니다.
+
+여러분의 기여를 기다립니다! 😊
+
+
+
+
+
+ <br>
+
+ ## 🧑‍💻 About Contact
+- **Email**: [![Email Badge](https://img.shields.io/badge/gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:kjw06171@gmail.com)
+- **GitHub**: [![GitHub Badge](https://img.shields.io/badge/github-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kjw06171)
+- **Instagram**: [![Instagram Badge](https://img.shields.io/badge/instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/apply_96)
