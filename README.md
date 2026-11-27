@@ -149,6 +149,7 @@ HTTP | http://localhost:8080
 | Butterworth | 10 Hz | 31.77 |
 | Moving average | 3 | 32.77 |
 | One-Euro | 4 Hz | 50.93 |
+
 <br>
 ## 📈 결과
 
