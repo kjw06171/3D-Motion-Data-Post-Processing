@@ -64,7 +64,7 @@ pip install -r requirements.txt
 python scripts/p1_2_post_processing.py
 ```
 
-### 3-B. 처음부터 실행 (영상 다운로드부터, 수 분)
+### 3-B. 처음부터 실행 
 1. `scripts/p1_create_raw_keypoints.py`의 `url_list`에 유튜브 주소를 넣습니다.
 2. 순서대로 실행합니다.
 ```bash
