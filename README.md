@@ -103,7 +103,7 @@ HTTP | http://localhost:8080
 
 ---
 
-## 🎮 Unity에서 보기 (선택)
+## 🎮 Unity에서 보기
 
 수업에서 제공된 Unity 프로젝트(`BlazeDataExtraction`)를 사용합니다.
 1. Mixamo 캐릭터를 `Assets/Character`에 넣고, **Rig → Humanoid → Apply**, **Materials → Extract Textures**
