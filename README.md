@@ -29,20 +29,23 @@
 ```
 
 ---
-
+ <br>
+ 
 ## ▶ 실행 방법
 
 ### 0. 준비물
 - Python **3.9 ~ 3.11** (개발 환경: Windows, Python 3.9)
 - 인터넷 (라이브러리 설치, 영상 다운로드 시)
-
+ <br>
+ 
 ### 1. 코드 내려받기
 ```bash
 git clone https://github.com/kjw06171/3D-Motion-Data-Post-Processing.git
 cd 3D-Motion-Data-Post-Processing
 ```
 또는 GitHub 화면의 **Code → Download ZIP**으로 받아서 압축을 풀어도 됩니다.
-
+ <br>
+ 
 ### 2. 라이브러리 설치
 ```bash
 pip install -r requirements.txt
@@ -50,12 +53,15 @@ pip install -r requirements.txt
 > conda를 쓴다면 먼저 환경을 만들어 주세요.
 > `conda create -n motion python=3.9` → `conda activate motion` → 위 명령 실행
 
+ <br>
+ 
 ### 3-A. 빠른 실행 (추천, 약 1분)
 미리 추출해 둔 `data/raw_keypoints/redred.npz`로 **후처리만** 바로 실행합니다. 영상 다운로드가 필요 없습니다.
 ```bash
 python scripts/p1_2_post_processing.py
 ```
-
+ <br>
+ 
 ### 3-B. 처음부터 실행 (영상 다운로드부터, 수 분)
 1. `scripts/p1_create_raw_keypoints.py`의 `url_list`에 유튜브 주소를 넣습니다.
 2. 순서대로 실행합니다.
@@ -65,7 +71,8 @@ python scripts/p1_2_post_processing.py       # 후처리 + 그래프
 ```
 
 ---
-
+ <br>
+ 
 ## 📊 실행하면 생기는 결과
 
 | 위치 | 파일 | 내용 |
@@ -78,7 +85,8 @@ python scripts/p1_2_post_processing.py       # 후처리 + 그래프
 | | `*_skeleton.png` | 같은 프레임을 원본·수업·개선 방법으로 그린 그림 |
 | | `*_filters.png` | 스무딩 필터 4종 비교 |
 | | `*_metrics.csv`, `*_filters.csv` | 지표 숫자 |
-
+ <br>
+ 
 ### 3D 모션 재생 화면 (viser)
 실행이 끝나면 터미널에 아래와 같은 주소가 나옵니다.
 ```
@@ -90,7 +98,8 @@ HTTP | http://localhost:8080
 3. 다 봤으면 터미널에서 **`Ctrl + C`**를 눌러 종료합니다.
 
 ---
-
+ <br>
+ 
 ## ⚙ 설정 (`scripts/p1_2_post_processing.py` 맨 위)
 
 | 설정 | 기본값 | 설명 |
@@ -102,7 +111,8 @@ HTTP | http://localhost:8080
 | `PALM_FLIP` | `False` | 손바닥 방향을 손마다 180° 뒤집기 |
 
 ---
-
+ <br>
+ 
 ## 🎮 Unity에서 보기
 
 수업에서 제공된 Unity 프로젝트(`BlazeDataExtraction`)를 사용합니다.
@@ -114,12 +124,14 @@ HTTP | http://localhost:8080
 > 파일 이름에 한글·이모지가 있으면 Unity가 못 읽을 수 있으니 영어로 바꿔서 사용하세요.
 
 ---
+<br>
 
 ## 🔧 수업 후처리 (Provided)
 
 `create_height_corrected_target` (원본 코드 그대로 유지)
 매 프레임 발끝(31·32번) 중 낮은 점을 y=0으로 맞추고, 0보다 낮은 값은 0으로 자름(clamp).
 → 지면 문제는 해결하지만, 떨림이 오히려 증가(43.1 → 46.8)하고 뒤꿈치가 잘려 발이 납작해짐(전체 프레임의 6.4%).
+
 <br>
 ## 🛠 개선 후처리 7단계 (Refined)
 
@@ -173,28 +185,6 @@ HTTP | http://localhost:8080
 | `module 'mediapipe' has no attribute 'solutions'` | `pip install mediapipe==0.10.14` |
 | 실행이 끝나지 않음 | viser 재생 화면이 켜져 있는 상태입니다. `Ctrl + C`로 종료 |
 | 그래프 제목의 한글이 □로 보임 | 한글 폰트(맑은 고딕 등)가 없는 환경입니다. 결과에는 영향 없음 |
-
-
-<br>
-
-## 🤝 Contributing
-
-이 프로젝트는 모든 사람의 기여를 환영합니다! 아래는 프로젝트에 참여하는 방법입니다:
-
-1. **버그 보고**: 문제가 발생하거나 개선할 부분을 발견했다면, [이슈를 열어](https://github.com/kjw06171/kim-ji-won/issues) 버그를 보고해 주세요.
-2. **풀 리퀘스트 제출**: 새로운 기능을 추가하거나 기존 문제를 해결하고 싶다면, 레포지토리를 포크한 후 풀 리퀘스트를 제출해 주세요.
-3. **문서 개선**: 프로젝트의 문서를 개선하는 데 기여해 주세요. 작은 수정도 환영합니다!
-
-#### 기여 방법
-1. 레포지토리를 포크(Fork)합니다.
-2. 새 브랜치를 생성합니다. (`git checkout -b feature/your-feature`)
-3. 변경 사항을 커밋합니다. (`git commit -am 'Add some feature'`)
-4. 브랜치에 푸시(Push)합니다. (`git push origin feature/your-feature`)
-5. 풀 리퀘스트를 생성합니다.
-
-여러분의 기여를 기다립니다! 😊
-
-
 
 
 
