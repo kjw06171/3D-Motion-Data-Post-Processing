@@ -37,8 +37,6 @@
 - Python **3.9 ~ 3.11** (개발 환경: Windows, Python 3.9)
 - 인터넷 (라이브러리 설치, 영상 다운로드 시)
 
-<br>
- 
 ### 1. 코드 내려받기
 ```bash
 git clone https://github.com/kjw06171/3D-Motion-Data-Post-Processing.git
@@ -46,8 +44,6 @@ cd 3D-Motion-Data-Post-Processing
 ```
 또는 GitHub 화면의 **Code → Download ZIP**으로 받아서 압축을 풀어도 됩니다.
 
-<br>
- 
 ### 2. 라이브러리 설치
 ```bash
 pip install -r requirements.txt
@@ -55,15 +51,12 @@ pip install -r requirements.txt
 > conda를 쓴다면 먼저 환경을 만들어 주세요.
 > `conda create -n motion python=3.9` → `conda activate motion` → 위 명령 실행
 
- <br>
- 
 ### 3-A. 빠른 실행 (추천, 약 1분)
 미리 추출해 둔 `data/raw_keypoints/redred.npz`로 **후처리만** 바로 실행합니다. 영상 다운로드가 필요 없습니다.
 ```bash
 python scripts/p1_2_post_processing.py
 ```
- <br>
- 
+
 ### 3-B. 처음부터 실행 (영상 다운로드부터, 수 분)
 1. `scripts/p1_create_raw_keypoints.py`의 `url_list`에 유튜브 주소를 넣습니다.
 2. 순서대로 실행합니다.
