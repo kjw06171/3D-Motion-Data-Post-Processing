@@ -64,7 +64,8 @@ python scripts/p1_2_post_processing.py
 python scripts/p1_create_raw_keypoints.py    # 영상 다운로드 + 관절 추출 → data/raw_keypoints/*.npz
 python scripts/p1_2_post_processing.py       # 후처리 + 그래프
 ```
- <br>
+<br>
+
 ---
  
 ## 📊 실행하면 생기는 결과
