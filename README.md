@@ -94,9 +94,9 @@ python scripts/p1_2_post_processing.py       # 후처리 + 그래프
 viser (listening *:8080)
 HTTP | http://localhost:8080
 ```
-1. 웹 브라우저 주소창에 **`http://localhost:8080`**을 입력합니다. (숫자는 터미널에 나온 **HTTP 줄**을 따르세요)
+1. 웹 브라우저 주소창에 `http://localhost:8080`을 입력합니다. (숫자는 터미널에 나온 **HTTP 줄**을 따르세요)
 2. 개선 후처리된 모션이 반복 재생됩니다. 마우스로 돌려 볼 수 있습니다.
-3. 다 봤으면 터미널에서 **`Ctrl + C`**를 눌러 종료합니다.
+3. 다 봤으면 터미널에서 `Ctrl + C`를 눌러 종료합니다.
 
 ---
  <br>
