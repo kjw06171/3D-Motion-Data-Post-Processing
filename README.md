@@ -4,8 +4,8 @@
 ## 👤 작성자
 
 - 이름: 김지원
-- 학번: (학번 입력)
-- 과목: (과목명) – Assignment 02: 3D Motion Data Post-Processing
+- 학번: 20244817
+- 과목: 인공지능과 머신러닝 – Assignment 02: 3D Motion Data Post-Processing
 - 중앙대학교 (CAU)
 
 유튜브 춤 영상에서 MediaPipe BlazePose로 3D 관절 좌표를 추출하고,
